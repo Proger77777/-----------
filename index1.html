@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DPrintPro - Профессиональная 3D-печать</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="i (9).webp" alt="3DPrintPro">
+                <span>3DPrintMaster</span>
+            </a>
+            <nav class="nav">
+                <a href="#tech">Технологии</a>
+                <a href="#materials">Материалы</a>
+                <a href="#calculator">Калькулятор</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <button class="btn btn-primary">Заказать</button>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <h1>Профессиональная 3D-печать</h1>
+            <p>Высококачественные изделия по индивидуальным проектам с гарантией точности</p>
+            <div class="hero-btns">
+                <button class="btn btn-primary">Рассчитать стоимость</button>
+                <button class="btn btn-outline">Примеры работ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Технологии печати -->
+    <section id="tech" class="section">
+        <div class="container">
+            <h2 class="section-title">Технологии печати</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">FDM</div>
+                    <h3>FDM печать</h3>
+                    <p>Точная послойная печать пластиковыми нитями</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">SLA</div>
+                    <h3>SLA печать</h3>
+                    <p>Фотополимерная печать с высокой детализацией</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">SLS</div>
+                    <h3>SLS печать</h3>
+                    <p>Лазерное спекание порошковых материалов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section id="calculator" class="section" style="background: #f8faff;">
+        <div class="container">
+            <h2 class="section-title">Калькулятор стоимости</h2>
+            <div class="calculator">
+                <div class="calc-step">
+                    <h3>1. Выберите материал</h3>
+                    <div style="display: grid; gap: 15px;">
+                        <label style="display: flex; gap: 10px; align-items: center;">
+                            <input type="radio" name="material" checked> PLA (от 5 ₽/грамм)
+                        </label>
+                        <label style="display: flex; gap: 10px; align-items: center;">
+                            <input type="radio" name="material"> ABS (от 7 ₽/грамм)
+                        </label>
+                        <label style="display: flex; gap: 10px; align-items: center;">
+                            <input type="radio" name="material"> PETG (от 6 ₽/грамм)
+                        </label>
+                    </div>
+                </div>
+                <div class="calc-result">
+                    <h3>Примерная стоимость:</h3>
+                    <div class="price">0 ₽</div>
+                    <button class="btn btn-accent">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>3DPrintPro</h3>
+                    <p>Профессиональная 3D-печать с 2018 года. Качество и точность в каждой детали.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Техническая, 15</p>
+                    <p>+7 (999) 123-45-67</p>
+                    <p>info@3dprintpro.ru</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 9:00 - 18:00</p>
+                    <p>Сб-Вс: выходной</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
