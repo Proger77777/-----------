@@ -273,25 +273,30 @@ body {
 }
 /* Адаптивность */
 @media (max-width: 768px) {
+    /* На телефонах шапка становится вертикальной */
     .header .container {
         flex-direction: column;
         gap: 15px;
     }
     
+    /* Меню теперь может переноситься на новую строку */
     .nav {
         flex-wrap: wrap;
         justify-content: center;
     }
     
+    /* Кнопки встают столбиком по центру */
     .hero-btns {
         flex-direction: column;
         align-items: center;
     }
     
+    /* Калькулятор теперь в одну колонку */
     .calculator {
         grid-template-columns: 1fr;
     }
     
+    /* У секций появляются отступы сверху и снизу */
     .section {
         padding: 50px 0;
     }
