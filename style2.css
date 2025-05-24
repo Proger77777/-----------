@@ -1,0 +1,232 @@
+:root {
+    --primary: #4a6bff;
+    --secondary: #ff6b4a;
+    --dark: #2a2a2a;
+    --light: #f8f9fa;
+    --gray: #e0e0e0;
+}
+
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Навигация */
+nav {
+    background-color: var(--dark);
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+/* Основной контент */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro h2 {
+    color: var(--primary);
+    font-size: 2em;
+}
+
+/* Галерея работ */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--primary);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project h3 {
+    margin: 0 0 10px;
+    color: var(--primary);
+}
+
+.project p {
+    margin: 0 0 15px;
+    color: #555;
+}
+
+.material {
+    display: inline-block;
+    background-color: var(--gray);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e05a3e;
+}
+
+/* Услуги */
+.services {
+    margin: 80px 0;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--primary);
+}
+
+.service-card h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.service-card ul {
+    padding-left: 20px;
+}
+
+.service-card li {
+    margin-bottom: 8px;
+}
+
+/* Подвал */
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 40px 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-info h3, .social-links h3 {
+    color: var(--secondary);
+    margin-top: 0;
+}
+
+.social-links a {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary);
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 1em;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
